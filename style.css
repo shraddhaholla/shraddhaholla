@@ -203,3 +203,26 @@ strong{color:var(--ivory)}
 .project-link{font-size:11px}
 @media(max-width:850px){.portrait-stage{height:460px!important;width:min(100%,440px)!important}.hero{min-height:0}}
 @media(max-width:600px){.portrait-stage{height:380px!important;width:min(100%,360px)!important}.panel .data-visual{padding:12px}.panel .data-visual svg .lab{font-size:10px}}
+
+/* FINAL ACCESSIBILITY AND PROOF-OF-WORK PASS */
+body{color:#f0e5df}
+.section-heading h2,.panel-head h2{font-size:clamp(34px,3.8vw,48px)!important;letter-spacing:-.02em}
+.section-heading p,.panel-head p{color:#eadbd5!important}
+.content-card p,.experience-item p,.project-card p{color:#f0e4de}
+.credential-grid.proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.credential-proof{display:flex;flex-direction:column;min-width:0}
+.credential-proof h3{font-size:clamp(20px,2vw,25px);line-height:1.25}
+.credential-proof p{flex:1}
+.proof-link{display:flex;flex-direction:column;gap:10px;margin-top:12px;border-top:1px solid #80505b;padding-top:14px;color:#f4b9c3!important;text-decoration:none!important;font-size:11px;font-weight:700;letter-spacing:.16em}
+.proof-link img{display:block;width:100%;height:260px;object-fit:contain;background:#f8f5f0;border:1px solid #d8c9c0;padding:7px}
+.proof-link span{display:inline-block}
+.proof-link:hover span{text-decoration:underline}
+.panel .data-visual{display:block!important;visibility:visible!important;opacity:1!important;width:100%;min-height:260px;margin:28px 0 34px;padding:18px;background:#1d1418!important;border:1px solid #a35c6d!important;overflow:visible!important}
+.panel .data-visual figcaption{display:block!important;color:#f4bac4!important;font-size:13px!important;margin:0 0 16px!important}
+.panel .data-visual svg{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:auto!important;min-height:220px;max-width:100%;overflow:visible!important}
+.panel .data-visual svg text{paint-order:stroke;stroke:none}
+.panel .data-visual svg .v{fill:#fff4ee!important;font-size:13px!important}
+.panel .data-visual svg .lab{fill:#f3e4df!important;font-size:12px!important}
+.panel .data-visual svg .axis{fill:#e0c9c5!important;font-size:11px!important}
+.panel .visual-note{color:#e7d4cf!important}
+@media(max-width:760px){.credential-grid.proof-grid{grid-template-columns:1fr}.proof-link img{height:230px}.panel .data-visual{padding:12px}.panel .data-visual svg{min-height:190px}}
