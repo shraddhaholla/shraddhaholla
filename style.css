@@ -226,3 +226,9 @@ body{color:#f0e5df}
 .panel .data-visual svg .axis{fill:#e0c9c5!important;font-size:11px!important}
 .panel .visual-note{color:#e7d4cf!important}
 @media(max-width:760px){.credential-grid.proof-grid{grid-template-columns:1fr}.proof-link img{height:230px}.panel .data-visual{padding:12px}.panel .data-visual svg{min-height:190px}}
+
+
+/* Final: keep credentials clean; open evidence only when requested */
+.credential-proof .proof-link{display:inline-flex;align-self:flex-start;flex-direction:row;align-items:center;gap:8px;margin-top:16px;padding:12px 0 0;border-top:1px solid #80505b;color:#f4b9c3!important;font-size:11px;font-weight:700;letter-spacing:.16em;text-decoration:none!important}
+.credential-proof .proof-link:hover span{text-decoration:underline;text-underline-offset:4px}
+.credential-proof .proof-link img{display:none!important}
